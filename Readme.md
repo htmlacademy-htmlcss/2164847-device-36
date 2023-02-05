@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Марина Платонова](https://up.htmlacademy.ru/htmlcss/36/user/2164847).
-* Наставник:[Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Наставник:[Малик](https://htmlacademy.ru/profile/id17217).
 
 ---
 
