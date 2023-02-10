@@ -700,10 +700,28 @@ section {
   padding: 0;
   margin: 0 7.5px;
 }
+.social:hover {
+  background: #ffc700;
+}
+.social:active {
+  opacity: 0.3;
+}
+.social:focus {
+  border: 2px solid #af4fff;
+}
 .footer__address {
   display: flex;
   flex-direction: column;
   max-width: 234px;
+}
+.footer-logo:hover {
+  opacity: 0.6;
+}
+.footer-logo:active {
+  opacity: 0.3;
+}
+.footer-logo:focus {
+  border: 2px solid #af4fff;
 }
 .footer__wrapper {
   display: flex;
@@ -1260,4 +1278,26 @@ section {
   line-height: 30px;
   color: #444444;
   margin: 0;
+}
+.navigation li a:hover {
+  text-decoration: underline;
+  color: #ffc700;
+}
+.navigation li a:active {
+  opacity: 0.3;
+  text-decoration: underline;
+}
+.navigation li a:focus {
+  border: 2px solid #af4fff;
+}
+.footer__phone:hover {
+  text-decoration: underline;
+  color: #ffc700;
+}
+.footer__phone:active {
+  opacity: 0.3;
+  text-decoration: underline;
+}
+.footer__phone:focus {
+  border: 2px solid #af4fff;
 }
