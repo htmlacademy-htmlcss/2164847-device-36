@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <base href="https://htmlacademy-htmlcss.github.io/2164847-device-36/3/">
+</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/">
+          <img
+            src="./images/logo.svg"
+            alt="Логотип"
+            class="header__logo"
+            width="145"
+            height="36"
+          />
+        </a>
+        <div class="header-nav">
+          <div class="search-form__wrapper">
+            <form action="https://echo.htmlacademy.ru" class="search-form">
+              <input
+                name="query"
+                type="text"
+                aria-label="Поиск по сайту"
+                placeholder="Поиск по сайту"
+                class="site-search"
+              />
+              <button type="submit" class="find">
+                Найти
+                <div class="square"></div>
+              </button>
+            </form>
+            <a href="#" class="login login2"> Коля Петухов </a>
+          </div>
+          <button>Выйти</button>
+          <a href="#" class="login"> " /> Сравнить </a>
+          <a href="#" class="login"> Корзина </a>
+        </div>
+        <div class="header__catalog">
+          <div class="catalog">
+            Каталог товаров
+            <button class="catalog__button">
+              <img src="./images/plus.svg" alt="плюс" width="16" height="16" />
+            </button>
+          </div>
+
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Моноподы для селфи</a>
+        </li>
+      </ul>
+      <section>
+        <div>
+          <div>фильтр:</div>
+
+          <div>Стоимость</div>
+          <input type="range" />
+
+          <div>Цвет</div>
+          <ul>
+            <li>
+              <input checked type="checkbox" name="black" id="filter_black" />
+              <label for="filter_black">Черный</label>
+            </li>
+            <li>
+              <input checked type="checkbox" name="white" id="filter_white" />
+              <label for="filter_white">Белый</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="blue" id="blue" />
+              <label for="filter_blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="filter_red" />
+              <label for="filter_red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="filter_pink" />
+              <label for="filter_pink">Розовый</label>
+            </li>
+          </ul>
+
+          <div>Bluetooth</div>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                checked
+                name="has_bluetooth"
+                id="has_bluetooth"
+              />
+              <label for="has_bluetooth">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="has_bluetooth" id="hasnt_bluetooth" />
+              <label for="hasnt_bluetooth">Нет</label>
+            </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </div>
+        <div>
+          <div>сортировка:</div>
+          <div>Популярные</div>
+          <div>
+            <img src="./images/vektor-beliebt.svg" alt="популярные" />
+          </div>
+          <a href="#">
+            <img src="./images/vector-up.svg" alt="стрелка вверх" />
+          </a>
+          <a href="#">
+            <img src="./images/vector-down.svg" alt="стрелка вниз" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./images/amateur.png" alt="любительская" />
+          </a>
+          <a href="#">Любительская селфи-палка</a>
+          <div>500 ₽</div>
+        </div>
+        <div>
+          <div>
+            <img src="./images/professional.png" alt="профессиональная" />
+          </div>
+          <div>Профессиональная селфи-палка</div>
+          <div>1 500 ₽</div>
+        </div>
+        <div>
+          <div>
+            <img src="./images/unsinkable.png" alt="непотопляемая" />
+          </div>
+          <div>Непотопляемая селфи-палка</div>
+          <div>2 500 ₽</div>
+        </div>
+        <div>
+          <div>
+            <img src="./images/selfie stick.png" alt="селфи-палка" />
+          </div>
+          <div>Селфи-палка «Следуй за мной»</div>
+          <div>1 500 ₽</div>
+        </div>
+        <button>Загрузить ещЁ</button>
+        <div>
+          <a>Назад</a>
+          <a>1</a>
+          <a>2</a>
+          <a>3</a>
+          <a>...</a>
+          <a>15</a>
+          <a>Вперёд</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__address">
+            <img
+              class="footer-logo"
+              src="images/yellowlogo.svg"
+              alt="Жёлтый логотип"
+              width="145"
+              height="36"
+            />
+            <div>
+              <address>
+                Санкт-Петербург, набережная <br />
+                реки Карповки, 5, литера П.
+              </address>
+              <img
+                src="./images/line.svg"
+                alt="линия"
+                class="footer__line"
+                width="80"
+                height="7"
+              />
+            </div>
+          </div>
+          <div class="footer__navigation">
+            <ul class="navigation white">
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="socials">
+              <li>
+                <a href="#" class="social" aria-label="Telegram">
+                  <svg
+                    width="14"
+                    height="12"
+                    viewBox="0 0 14 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.4431 0.0735832L0.623071 4.63158C-0.183596 4.95558 -0.178929 5.40558 0.475071 5.60625L3.50974 6.55292L10.5311 2.12292C10.8631 1.92092 11.1664 2.02958 10.9171 2.25092L5.2284 7.38492H5.22707L5.2284 7.38558L5.01907 10.5136C5.32574 10.5136 5.46107 10.3729 5.63307 10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583 12.9824 -0.170417 12.4431 0.0735832Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social" aria-label="Youtube">
+                  <svg
+                    width="16"
+                    height="11"
+                    viewBox="0 0 16 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.6671 1.67464C15.5765 1.35146 15.4 1.05887 15.1564 0.827973C14.9059 0.589975 14.5989 0.41973 14.2644 0.333306C13.0124 0.00330585 7.99641 0.00330593 7.99641 0.00330593C5.9053 -0.0204856 3.8147 0.0841556 1.73641 0.316639C1.40187 0.409448 1.09545 0.583497 0.844411 0.823306C0.597745 1.06064 0.419078 1.35331 0.325745 1.67397C0.10154 2.8818 -0.00739387 4.1082 0.000411455 5.33664C-0.00758854 6.56397 0.101078 7.78997 0.325745 8.99931C0.417078 9.31864 0.595078 9.60997 0.842411 9.84531C1.08974 10.0806 1.39774 10.2506 1.73641 10.3406C3.00508 10.67 7.99641 10.67 7.99641 10.67C10.0902 10.6938 12.1835 10.5892 14.2644 10.3566C14.5989 10.2702 14.9059 10.1 15.1564 9.86197C15.3999 9.63112 15.5762 9.33849 15.6664 9.01531C15.8965 7.80794 16.0083 6.58103 16.0004 5.35197C16.0177 4.11771 15.906 2.88502 15.6671 1.67397V1.67464ZM6.40174 7.61931V3.05464L10.5751 5.33731L6.40174 7.61931Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social" aria-label="Twitter">
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.7 0.155143C11.2 -0.344857 12.3 0.455143 12.9 1.25514C13.4 1.05514 14 0.855143 14.6 0.655143C14.6 1.45514 14.1 2.05514 13.8 2.25514C14.5 2.45514 15 1.85514 15 1.85514C14.9 2.75514 14.1 3.55514 13.6 3.75514C13.4 10.0551 10.8 14.1551 4.7 14.0551C4.2 14.0551 4.8 14.0551 4.3 14.0551C4 14.0551 0.6 13.6551 0 12.2551C2 12.4551 3.4 11.8551 4.1 11.1551C3.3 10.8551 1.7 10.7551 1.5 8.35514C1.8 8.55514 2 8.65514 2.6 8.55514C1.5 7.75514 0.3 7.05514 0.4 5.05514C0.7 5.35514 1.3 5.55514 1.6 5.45514C1 5.25514 -0.2 2.35514 0.8 0.855143C2.4 2.55514 4.1 4.25514 7.1 4.35514C7.3 2.25514 8.1 0.855143 9.7 0.155143Z"
+                      fill="#444444"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__logo">
+            <a href="tel:+78128121212" class="footer__phone">
+              Тел.: +7 (812) 812-12-12
+            </a>
+            <a href="#">
+              <img
+                src="./images/html-logo.svg"
+                width="115"
+                height="33"
+                alt="html логотип"
+                class="logotip"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <div class="modal_backgound hidden"></div>
+      <div class="modal hidden">
+        <h2 class="modal__title">Доставка под заказ</h2>
+        <button class="modal__close" type="button">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <form action="https://echo.htmlacademy.ru" class="modal__content">
+          <div class="form__field username">
+            <label for="username">Ваше имя:</label>
+            <input
+              placeholder="Введите имя"
+              class="modal__input"
+              type="text"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="form__field email">
+            <label for="email">Ваш e-mail:</label>
+            <input
+              class="modal__input"
+              placeholder="Введите e-mail"
+              type="text"
+              name="email"
+              id="email"
+            />
+          </div>
+
+          <div class="form__field product-delivery">
+            <label for="product-delivery">Что нужно привезти:</label>
+            <input
+              placeholder="В свободной форме"
+              class="modal__input"
+              type="text"
+              name="product-delivery"
+              id="product-delivery"
+            />
+          </div>
+          <div class="form__field count">
+            <label for="count">Количество:</label>
+            <div class="count__wrapper">
+              <button>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 7H0V9H16V7Z" fill="black" />
+                </svg>
+              </button>
+              <input
+                class="modal__input"
+                value="1"
+                type="text"
+                name="count"
+                id="count"
+              />
+              <button>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="send" type="submit">отправить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
