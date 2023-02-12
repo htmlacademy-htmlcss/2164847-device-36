@@ -707,7 +707,7 @@ section {
   opacity: 0.3;
 }
 .social:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 .footer__address {
   display: flex;
@@ -1281,7 +1281,7 @@ section {
 }
 .navigation li a:hover {
   text-decoration: underline;
-  color: #ffc700;
+  opacity: 0.6;
 }
 .navigation li a:active {
   opacity: 0.3;
