@@ -1301,3 +1301,49 @@ section {
 .footer__phone:focus {
   border: 2px solid #af4fff;
 }
+
+
+
+
+/* стили для каталога */
+
+.page__title {
+
+width: 541px;
+height: 50px;
+
+/* Main Title */
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+/* identical to box height, or 100% */
+
+
+/* basic/black */
+
+color: #000000;
+
+}
+.page__breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: '>';
+  opacity: 0.5;
+  color: #000000;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #000000;
+}
