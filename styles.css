@@ -29,6 +29,18 @@ div,
 section {
   box-sizing: border-box;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
 
 .slider {
   position: relative;
@@ -121,14 +133,14 @@ section {
   display: flex;
   align-items: center;
   margin-top: 50px;
-
 }
 
 .product > img {
   padding: 35px 39px;
 }
 
-.show {}
+.show {
+}
 
 .product > p {
   width: 100%;
@@ -314,7 +326,7 @@ section {
   position: absolute;
   left: -15px;
 
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -331,7 +343,7 @@ section {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1537,16 +1549,14 @@ section {
 }
 
 .page__title {
-
   width: 541px;
   height: 50px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-
 }
 
 .page__breadcrumbs {
@@ -1560,7 +1570,7 @@ section {
 }
 
 .breadcrumbs__item:not(:last-child)::after {
-  content: '>';
+  content: ">";
   opacity: 0.5;
   color: #000000;
   margin-left: 16px;
@@ -1570,7 +1580,7 @@ section {
 .breadcrumbs__link {
   text-decoration: none;
   color: #000000;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1579,7 +1589,7 @@ section {
 }
 
 .filters__title {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1590,7 +1600,7 @@ section {
 }
 
 .filters__subtitle {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1600,7 +1610,7 @@ section {
 }
 
 .list-item__label {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1614,7 +1624,7 @@ section {
 }
 
 .filters__popular {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1628,7 +1638,7 @@ section {
 }
 
 .product__name {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1639,7 +1649,7 @@ section {
 }
 
 .product__price {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1656,8 +1666,8 @@ section {
 }
 
 .product {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .product__info {
@@ -1665,13 +1675,12 @@ flex-direction: column;
   display: flex;
   justify-content: space-between;
 }
-.prev-pag{
-
+.prev-pag {
 }
 
 .Load__more {
   width: 100%;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1679,7 +1688,7 @@ flex-direction: column;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   display: flex;
   justify-content: center;
   padding-top: 18px;
@@ -1691,13 +1700,13 @@ flex-direction: column;
 .pager {
   justify-content: space-between;
   display: flex;
-  background: #EBEBEB;
+  background: #ebebeb;
   margin-bottom: 78px;
   padding: 25px;
 }
 
 .prev-page {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1710,7 +1719,7 @@ flex-direction: column;
 }
 
 .next-page {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1720,26 +1729,10 @@ flex-direction: column;
   text-transform: uppercase;
   color: #000000;
 }
-.list-item__checkbox {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  opacity: 0;
-}
-.list-item__checkbox:checked + label:after,
-.list-item__checkbox:not(:checked) + label:after {
-    content: "";
-    position: absolute;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-
-}
 
 .numbers {
   margin: 0;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1761,7 +1754,7 @@ flex-direction: column;
 
 .logout {
   border: none;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1769,7 +1762,6 @@ flex-direction: column;
   color: #000000;
   opacity: 0.3;
   background: transparent;
-
 }
 
 .layout-grid {
@@ -1837,4 +1829,80 @@ flex-direction: column;
   transform: translateY(-50%);
   z-index: -1;
   transition: 0.3s;
+}
+.filters__checkbox-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  margin-right: 16px;
+  display: block;
+}
+.list-item__label {
+  display: flex;
+}
+.filters__list-item + .filters__list-item {
+  margin-top: 17px;
+}
+.list-item__checkbox:checked + .list-item__label .filters__checkbox-mark {
+  border-color: #000000;
+  background: url(./images/checkbox-mark.svg) center center no-repeat;
+  background-size: 10px 10px;
+}
+.range {
+  position: relative;
+  width: 200px;
+}
+.range-line {
+  width: 100%;
+  margin-top: 30px;
+
+  height: 2px;
+  background: #dcdcdc;
+}
+.range-line-full {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 119px;
+  height: 2px;
+  background: #000000;
+}
+.range-button {
+  position: absolute;
+  top: -9px;
+  background: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}
+.range-button-min {
+  left: 0;
+}
+.range-button-max {
+  left: 101px;
+}
+.range-inputs {
+  margin-top: 11px;
+  display: flex;
+}
+.range-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 0;
+  opacity: 0.3;
+  border: none;
+  background: none;
+}
+.range-input-min{
+  width: 28px;
+
+}
+.range-input-max{
+  width: 55px;
+  margin-left: 76px;
+
 }

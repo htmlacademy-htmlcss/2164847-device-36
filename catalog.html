@@ -77,31 +77,56 @@
               <hr class="line">
 
               <div class="filters__subtitle">Стоимость</div>
-              <input type="range" />
+              <div>
+                <div class="range">
+      <div class="range-line">
+
+      </div>
+      <div class="range-line-full">
+
+      </div>
+      <button class="range-button range-button-min"></button>
+      <button class="range-button range-button-max"></button>
+                </div>
+                <div class="range-inputs">
+                  <input placeholder="от 0" class="range-input range-input-min">
+                  <input placeholder="до 5000" class="range-input range-input-max">
+                </div>
+              </div>
               <hr class="line">
 
               <div class="filters__subtitle">Цвет</div>
               <ul class="filters__list">
                 <li class="filters__list-item">
-                  <input class="list-item__checkbox" checked type="checkbox" name="black" id="filter_black" />
-                  <label class="list-item__label" for="filter_black">Черный</label>
+                  <input class="list-item__checkbox visually-hidden" checked type="checkbox" name="black" id="filter_black" />
+                  <label class="list-item__label" for="filter_black">
+                   <span class="filters__checkbox-mark"></span>
+                    Черный</label>
                 </li>
                 <li class="filters__list-item">
-                  <input class="list-item__checkbox" checked type="checkbox" name="white" id="filter_white" />
-                  <label class="list-item__label" for="filter_white">Белый</label>
+                  <input class="list-item__checkbox visually-hidden" checked type="checkbox" name="white" id="filter_white" />
+                  <label class="list-item__label" for="filter_white">
+                    <span class="filters__checkbox-mark"></span>
+                    Белый</label>
                 </li>
 
                 <li class="filters__list-item">
-                  <input class="list-item__checkbox" type="checkbox" name="blue" id="blue" />
-                  <label class="list-item__label" for="filter_blue">Синий</label>
+                  <input class="list-item__checkbox visually-hidden" type="checkbox" name="blue" id="filter_blue" />
+                  <label class="list-item__label" for="filter_blue">
+                    <span class="filters__checkbox-mark"></span>
+                    Синий</label>
                 </li>
                 <li class="filters__list-item">
-                  <input class="list-item__checkbox" type="checkbox" name="red" id="filter_red" />
-                  <label class="list-item__label" for="filter_red">Красный</label>
+                  <input class="list-item__checkbox visually-hidden" type="checkbox" name="red" id="filter_red" />
+                  <label class="list-item__label" for="filter_red">
+                    <span class="filters__checkbox-mark"></span>
+                    Красный</label>
                 </li>
                 <li class="filters__list-item">
-                  <input class="list-item__checkbox" type="checkbox" name="pink" id="filter_pink" />
-                  <label class="list-item__label" for="filter_pink">Розовый</label>
+                  <input class="list-item__checkbox visually-hidden" type="checkbox" name="pink" id="filter_pink" />
+                  <label class="list-item__label" for="filter_pink">
+                    <span class="filters__checkbox-mark"></span>
+                    Розовый</label>
                 </li>
               </ul>
               <hr class="line">
