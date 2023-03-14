@@ -91,7 +91,7 @@ section {
 }
 
 .header__logo:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .header__catalog {
@@ -132,7 +132,6 @@ section {
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-top: 50px;
 }
 
 .product > img {
@@ -163,7 +162,6 @@ section {
 }
 
 .product__thumbnail {
-  width: 100%;
   background: #f0f0f0;
 }
 
@@ -195,8 +193,6 @@ section {
 }
 
 .navigation {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   font-family: "Raleway";
@@ -207,11 +203,14 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   list-style-type: none;
+  margin-top: 12px;
+  margin-left: -65px;
+  margin-bottom: 7px;
 }
 
 .navigation > li {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 22px;
+  margin-right: 24px;
   color: #000000;
   font-family: "Raleway", sans-serif;
 }
@@ -243,7 +242,7 @@ section {
   display: block;
   outline: none;
   border: none;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .delivery__banner:hover .car {
@@ -259,13 +258,13 @@ section {
 }
 
 .tabs__item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .delivery__banner .product:focus {
   outline: none;
   border: none;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .card__title {
@@ -297,6 +296,7 @@ section {
 
 .nicolai::before {
   content: url(./images/person.svg);
+  margin-right: 5px;
 }
 
 .login {
@@ -316,6 +316,7 @@ section {
 
 .basket::before {
   content: url(./images/basket.svg);
+  margin-right: 10px;
 }
 
 .basket::after {
@@ -370,7 +371,9 @@ section {
 
   color: #000000;
 }
-
+.navigation__item:last-child {
+  margin-right: -4px;
+}
 .navigation__item:hover {
   opacity: 0.6;
 }
@@ -380,7 +383,7 @@ section {
 }
 
 .navigation__item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .more_detailed {
@@ -399,7 +402,7 @@ section {
 
 .more_detailed:focus::before {
   content: "";
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   position: absolute;
   left: -38px;
   right: -38px;
@@ -468,7 +471,7 @@ section {
 
 .more_about_us:focus::before {
   content: "";
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   position: absolute;
   left: 0;
   right: -10px;
@@ -549,7 +552,7 @@ section {
 
 .write_to_us:focus::before {
   content: "";
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   position: absolute;
   left: 0;
   right: -48px;
@@ -566,6 +569,8 @@ section {
 .footer__phone {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
+  margin-bottom: 15px;
+  margin-right: 2px;
 }
 
 .address {
@@ -615,7 +620,7 @@ section {
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   border-right: none;
-  width: 359px;
+  width: 308px;
   background: url(./images/loup.svg) no-repeat left 16px center;
 }
 
@@ -637,11 +642,11 @@ section {
   left: -1px;
   width: 411px;
   height: calc(100% + 3px);
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .login2 {
-  margin-left: 27px;
+  margin-left: 25px;
 }
 
 .login:hover {
@@ -653,7 +658,7 @@ section {
 }
 
 .login:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .search-form__wrapper {
@@ -682,7 +687,7 @@ section {
   display: block;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
-  padding: 10px 56px;
+  padding: 10px 55px;
   background: transparent;
 }
 
@@ -700,7 +705,7 @@ section {
   left: -1px;
   width: calc(100% + 3px);
   height: calc(100% + 3px);
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .search-form {
@@ -722,7 +727,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .photo-section {
@@ -869,6 +874,15 @@ section {
   padding: 0;
   list-style-type: none;
 }
+.social:hover {
+  background: #ffc700;
+}
+.social:active {
+  background: #ffc700;
+}
+.social:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 .social {
   display: flex;
@@ -909,7 +923,7 @@ section {
 }
 
 .footer-logo:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .footer__wrapper {
@@ -924,6 +938,16 @@ section {
   margin-bottom: 6px;
   margin-top: 63px;
 }
+.logotip:hover path {
+  fill: #ffffff;
+}
+.logotip:active path {
+  fill: #ffffff;
+}
+.logotip:focus {
+  outline: none;
+  border: 1px solid #af4fff;
+}
 
 .footer__address address {
   color: #ffffff;
@@ -936,7 +960,7 @@ section {
   background: #ffc700;
   width: 80px;
   height: 7px;
-  margin-top: 64px;
+  margin-top: 50px;
   margin-bottom: 16px;
 }
 
@@ -1531,7 +1555,7 @@ section {
 }
 
 .navigation li a:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .footer__phone:hover {
@@ -1545,7 +1569,7 @@ section {
 }
 
 .footer__phone:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .page__title {
@@ -1557,6 +1581,8 @@ section {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin-bottom: 15px;
+  margin-top: 38px;
 }
 
 .page__breadcrumbs {
@@ -1573,8 +1599,8 @@ section {
   content: ">";
   opacity: 0.5;
   color: #000000;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 11px;
+  margin-right: 12px;
 }
 
 .breadcrumbs__link {
@@ -1607,6 +1633,7 @@ section {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+  margin-top: -18px;
 }
 
 .list-item__label {
@@ -1626,6 +1653,8 @@ section {
 }
 
 .filters__popular {
+  margin-right: -26px;
+  margin-top: -8px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -1636,7 +1665,15 @@ section {
 
 .filters__popular::after {
   content: url(./images/vektor-beliebt.svg);
-  margin-left: 12px;
+  margin-left: 10px;
+}
+.arrows {
+  margin-right: 49px;
+}
+.arrows__right {
+  margin-left: -34px;
+}
+.product-2 {
 }
 
 .product__name {
@@ -1658,13 +1695,16 @@ section {
   line-height: 21px;
   text-align: right;
   color: #444444;
+  margin-right: 40px;
+  margin-top: 1px;
 }
 
 .products-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
   row-gap: 45px;
+  padding-left: 26px;
+  padding-top: 90px;
 }
 
 .product {
@@ -1676,12 +1716,12 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: -3px;
 }
 .prev-pag {
 }
 
-.Load__more {
-  width: 100%;
+.load__more {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -1695,8 +1735,10 @@ section {
   justify-content: center;
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-top: 44px;
+  margin-top: 40px;
+  margin-left: 27px;
   margin-bottom: 44px;
+  margin-right: 38px;
 }
 
 .pager {
@@ -1751,7 +1793,7 @@ section {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .logout {
@@ -1771,7 +1813,7 @@ section {
 .layout-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .filters__show {
@@ -1790,7 +1832,7 @@ section {
 
 .filters__show:focus::before {
   content: "";
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   position: absolute;
   left: -38px;
   right: -38px;
@@ -1802,8 +1844,14 @@ section {
   border: 2px solid #000000;
   width: 200px;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 12px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+.line-1 {
+  margin-top: 31px;
+}
+.line-2 {
+  margin-top: 30px;
 }
 
 .filters__show {
@@ -1819,7 +1867,8 @@ section {
   background: transparent;
   color: #000000;
   position: relative;
-  margin-left: 38px;
+  margin-top: 28px;
+  margin-left: 43px;
 }
 
 .filters__show::after {
@@ -1841,9 +1890,12 @@ section {
   border-radius: 3px;
   margin-right: 16px;
   display: block;
+  margin-top: -2px;
+  margin-left: -1px;
 }
 .list-item__label {
   display: flex;
+  margin-left: -2px;
 }
 .filters__list-item + .filters__list-item {
   margin-top: 17px;
@@ -1882,10 +1934,10 @@ section {
   height: 18px;
 }
 .range-button-min {
-  left: 0;
+  left: -8px;
 }
 .range-button-max {
-  left: 101px;
+  left: 111px;
 }
 .range-inputs {
   margin-top: 11px;
@@ -1934,5 +1986,23 @@ label .filters__radio-mark {
   align-items: center;
 }
 .arrow {
+  margin-left: 49px;
   opacity: 0.2;
+  margin-bottom: 4px;
+}
+
+.header.catalog__header > .container {
+  height: 186px;
+}
+
+.max {
+  margin-left: 25px;
+  margin-top: -10px;
+}
+
+.product-btn {
+  width: 100%;
+  flex-direction: row;
+  margin-top: 70px;
+  background: #f0f0f0;
 }
