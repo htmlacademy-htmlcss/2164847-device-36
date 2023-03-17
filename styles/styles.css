@@ -788,7 +788,7 @@ section {
   transition: 0.3s;
 }
 
-.metr {
+.meter {
   margin-bottom: 12px;
   text-align: left;
   font-family: "Rubik", sans-serif;
@@ -1450,7 +1450,7 @@ section {
 }
 
 .form__field.email::after {
-  content: url(./images/modal__email.svg);
+  content: url(./images/modal-email.svg);
   position: absolute;
   bottom: 40px;
   right: 20px;
