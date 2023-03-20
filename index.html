@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
   <body>
     <header class="header">
@@ -34,10 +35,10 @@
                 Найти
                 <span class="square"></span>
               </button>
-
             </form>
             <a href="#" class="login login2">
               <img
+                class="login-img"
                 src="./images/people.svg"
                 alt="Человек"
                 width="13"
@@ -46,8 +47,9 @@
               Войти
             </a>
           </div>
-          <a href="#" class="login">
+          <a href="#" class="login compare">
             <img
+              class="compare-img"
               src="./images/compare.svg"
               alt="Сравнить"
               width="10"
@@ -56,11 +58,17 @@
             Сравнить
           </a>
           <a href="#" class="login">
-            <img src="./images/cart.svg" alt="Корзина" width="16" height="14" />
+            <img
+              class="cart-img"
+              src="./images/cart.svg"
+              alt="Корзина"
+              width="16"
+              height="14"
+            />
             Корзина
           </a>
         </div>
-        <div class="header__catalog">
+        <nav class="header__catalog">
           <a href="/catalog.html" class="catalog">
             Каталог товаров
             <div class="catalog__button">
@@ -79,7 +87,7 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -219,12 +227,12 @@
         <li>
           <a href="#" class="card">
             <div class="box">
-                <img
-                  src="./images/quadrocopter.svg"
-                  alt="квадрокоптер"
-                  width="160"
-                  height="160"
-                />
+              <img
+                src="./images/quadrocopter.svg"
+                alt="квадрокоптер"
+                width="160"
+                height="160"
+              />
             </div>
             <div class="card__title">Квадрокоптеры</div>
           </a>
@@ -234,13 +242,13 @@
         <div class="container">
           <div>
             <ul class="tabs">
-              <li class="active tabs__item" tabindex="0">
+              <li class="active tabs__item delivery" tabindex="0">
                 <button>Доставка</button>
               </li>
-              <li class="tabs__item"  tabindex="0">
+              <li class="tabs__item warranty" tabindex="0">
                 <button>Гарантия</button>
               </li>
-              <li class="tabs__item"  tabindex="0">
+              <li class="tabs__item credit" tabindex="0">
                 <button>Кредит</button>
               </li>
             </ul>
@@ -282,15 +290,15 @@
           <div class="information-content">
             <div>
               <h2 class="information-content__title">О нас</h2>
-              <p class="information-content__paragraph">
-                Огромный выбор гаджетов не оставит равнодушным гика, который
-                есть в каждом из нас.
+              <p class="information-content__paragraph paragraph-1">
+                Огромный выбор гаджетов не оставит равнодушным <br />
+                гика, который есть в каждом из нас.
               </p>
-              <p class="information-content__paragraph">
-                Мы можем доставить ваш товар в самые отдалённые уголки России
-                транспортными компаниями:
+              <p class="information-content__paragraph paragraph-2">
+                Мы можем доставить ваш товар в самые отдалённые <br />
+                уголки России транспортными компаниями:
               </p>
-              <ul class="list">
+              <ul class="list delivery-list">
                 <li class="list__item">Меловые линии</li>
                 <li class="list__item">СДИК</li>
                 <li class="list__item">ТоксБерри</li>
@@ -299,9 +307,9 @@
             </div>
             <div class="contacts">
               <h2 class="information-content__title">Контакты</h2>
-              <p class="information-content__paragraph">
-                Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
-                проверить работоспособность покупки.
+              <p class="information-content__paragraph paragraph-3">
+                Вы можете забрать товар сами, заехав в наш офис. <br />
+                Заодно сможете проверить работоспособность покупки.
               </p>
               <h3 class="information-content__subtitle">
                 Интернет-магазин «Девайс»
